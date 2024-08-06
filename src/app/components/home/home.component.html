@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <h2>Dados da API</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.description }}</td>
+      <td>{{ item.status }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
